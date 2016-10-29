@@ -1,10 +1,10 @@
-[//]: <> (This is sample of markdown readme)
-
-# {{cookiecutter.app_name}}
+{{cookiecutter.app_name}}
+=========================
 
 {{cookiecutter.app_name}} provides ...
 
-## Install
+Install
+-------
 
 1. pip install
     
@@ -26,7 +26,8 @@
 
 4. Start hacking or using app.
 
-## Usage
+Usage
+-----
 
 example:
 
@@ -34,6 +35,7 @@ example:
 * `/API/v2/` : root url of API version 2
 ...
 
-## LICENSE
+LICENSE
+-------
 
 Please read LICENSE file
