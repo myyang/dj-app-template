@@ -56,7 +56,8 @@ case $1 in
         coverage report -m
         exit 0 ;;
     clean )
-        ls -a
+        find . -name *.pyc -delete
+        exit 0 ;;
     * ) echo "Invalid command: $1\nPlease use --help/-h to review usage."
         exit 1 ;;
 esac
