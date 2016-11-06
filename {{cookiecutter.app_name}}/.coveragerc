@@ -1,6 +1,6 @@
 # coveragerc ref: http://coverage.readthedocs.io/
 [run]
-source = dja/
+source = {{cookiecutter.app_name}}/
 
 [report]
 show_missing = true
