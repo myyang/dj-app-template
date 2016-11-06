@@ -7,28 +7,6 @@ try:
 except ImportError:
     from distutils.core import setup, find_packages
 
-from distutils.core import Command
-
-
-class TestCommand(Command):
-
-    """App test command"""
-    user_options = []
-
-    def run(self):
-        """Run test """
-        from django.conf import settings
-        settings.configure(
-            DATABASES={'default': {'NAME': ':memory:', 'ENGINE': 'django.db.backends.sqlite3'}},
-            INSTALLED_APPS=settings.INSTALLED_APPS + ['{{cookiecutter.app_name}}']
-        )
-
-        from django.core.management import call_command
-        import django
-
-        django.setup()
-        call_command('test', '{{cookiecutter.app_name}}')
-
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()

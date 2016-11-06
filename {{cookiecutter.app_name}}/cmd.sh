@@ -52,8 +52,8 @@ case $1 in
         pip install -r requirements.txt
         exit 0 ;;
     test )
-        coverage run setup.py test
-        coverage report
+        coverage run runtests.py
+        coverage report -m
         exit 0 ;;
     clean )
         ls -a

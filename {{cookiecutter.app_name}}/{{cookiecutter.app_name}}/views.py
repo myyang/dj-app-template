@@ -1,3 +1,4 @@
-from django.shortcuts import render
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Create your views here.
