@@ -29,6 +29,7 @@ Features
 
 * Django app standard layout
 * PyPI setup.py 
+* 100% initial coverage and testcase
 
 Change log
 ----------

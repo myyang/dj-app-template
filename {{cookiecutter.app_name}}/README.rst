@@ -29,6 +29,7 @@ Install
 Usage
 -----
 
+**NOTE**: customize your usage
 example:
 
 * `/API/v1/` : root url of API version 1
